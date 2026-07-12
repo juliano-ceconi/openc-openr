@@ -1,0 +1,22 @@
+# OS files
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.iml
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Temp
+*.tmp
+*.bak
+*.log

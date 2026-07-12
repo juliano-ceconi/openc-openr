@@ -1,21 +1,10 @@
-# Projeto OpenCode + OpenRouter Bundle
+# OpenCode + OpenRouter Bundle
 
-> Seu guia definitivo para usar agentes de IA no Windows. Do zero ao domínio do OpenCode com OpenRouter.
+> Guia completo para usar agentes de IA no Windows com OpenCode + OpenRouter.
 
-Este repositório contém o material completo de distribuição e vendas do **OpenCode + OpenRouter Bundle** — um infoproduto de R$ 17,00 que ensina empresários, profissionais liberais, programadores iniciantes, curiosos e hard-users de IA a instalar, configurar e usar o OpenCode com OpenRouter no Windows.
+Este repositório contém material gratuito e open-source para aprender a instalar, configurar e usar o **OpenCode** (agente de IA open source) com **OpenRouter** (gateway unificado de modelos) no Windows.
 
----
-
-## Para quem é este bundle
-
-- **Empresários**: crie protótipos e automatize tarefas sem time técnico
-- **Profissionais Liberais**: automatize documentos, planilhas e relatórios
-- **Programadores Iniciantes**: tenha um mentor de IA que escreve e explica código
-- **Curiosos & Hard-Users**: vá além do ChatGPT com agentes que acessam seu projeto
-
----
-
-## Estrutura do Infoproduto
+## Conteúdo
 
 ### `/conteudo`
 
@@ -30,18 +19,10 @@ Este repositório contém o material completo de distribuição e vendas do **Op
 
 | Arquivo | Descrição |
 |---|---|
-| `index.html` | Landing page de alta conversão com tema Clean Tech Profissional |
-| `style.css` | Design system completo com variáveis CSS, responsivo e animações sutis |
+| `index.html` | Landing page com tema Clean Tech Profissional |
+| `style.css` | Design system completo com variáveis CSS, responsivo e animações |
 | `script.js` | FAQ accordion, simulação de terminal e navegação suave |
 
----
+## Licença
 
-## Preço
-
-**R$ 17,00** — pagamento único, acesso vitalício, atualizações gratuitas.
-
----
-
-## Deploy e Distribuição
-
-Consulte `GUIA_PUBLICACAO_PLATAFORMAS.md` para publicar o bundle em Kiwify, Eduzz ou Hotmart sem custos fixos, e hospedar a landing page na Vercel gratuitamente.
+MIT © Juliano Ceconi
