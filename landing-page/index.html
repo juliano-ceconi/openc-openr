@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCode + OpenRouter Bundle - Seu Assistente de IA no Terminal</title>
+    <meta name="description" content="Aprenda a usar o OpenCode, o agente de IA open source, com OpenRouter no Windows. Guia prático para empresários, freelancers, devs iniciantes e entusiastas de IA.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">▲</span>
+            <span class="logo-text">OpenCode<span class="logo-accent">Bundle</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="#saber-mais">Saber Mais</a>
+            <a href="#conteudo">Conteúdo</a>
+            <a href="#comprar" class="nav-cta">Comprar</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-shapes"></div>
+            <div class="hero-content">
+                <div class="hero-badge">LANÇAMENTO</div>
+                <h1 class="hero-title">
+                    Seu agente de IA particular<br>
+                    direto no <span class="gradient-text">terminal do Windows</span>
+                </h1>
+                <p class="hero-description">
+                    O <strong>OpenCode</strong> é o agente de IA open source que está revolucionando a forma como devs e empresas programam. Com o <strong>OpenRouter</strong>, você usa os melhores modelos (Claude, GPT, Gemini) sem assinatura fixa — pagando só pelo que consumir. Este bundle ensina <strong>tudo do zero</strong>: instalação, configuração e uso prático no Windows.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">160K+</span>
+                        <span class="stat-label">GitHub Stars</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">7.5M</span>
+                        <span class="stat-label">Devs/mês</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">7min</span>
+                        <span class="stat-label">Setup</span>
+                    </div>
+                </div>
+                <div class="cta-group">
+                    <a href="#comprar" class="btn-primary" id="btn-hero-cta">
+                        QUERO APRENDER AGORA
+                    </a>
+                    <a href="#saber-mais" class="btn-secondary" id="btn-hero-secondary">
+                        VER CONTEÚDO COMPLETO
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-mockup">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">PS C:\projetos\meu-app></span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="term-line prompt"><span class="term-path">C:\projetos\meu-app></span> opencode</p>
+                        <p class="term-line green">> Inicializando OpenCode v1.3...</p>
+                        <p class="term-line green">> Conectado ao OpenRouter (claude-sonnet-4)</p>
+                        <p class="term-line blue">> AGENTS.md carregado (4 regras ativas)</p>
+                        <p class="term-line dim">─────────────────────────────</p>
+                        <p class="term-line user">Você: crie uma API REST em Node.js</p>
+                        <p class="term-line dim">▸ Analisando estrutura do projeto...</p>
+                        <p class="term-line dim">▸ Gerando rotas, modelos e controllers...</p>
+                        <p class="term-line green">✓ API criada em 12 segundos</p>
+                        <p class="term-line cursor">▌</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Para Quem Section -->
+        <section id="saber-mais" class="audience-section">
+            <div class="section-container">
+                <h2 class="section-title">Para quem é <span class="gradient-text">este bundle</span></h2>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h3>Empresários</h3>
+                        <p>Crie protótipos, automatize tarefas e entenda como a IA pode acelerar seus projetos sem precisar de um time de tecnologia.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <h3>Profissionais Liberais</h3>
+                        <p>Automatize tarefas repetitivas, crie documentos, planilhas e scripts que economizam horas do seu dia.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                        </div>
+                        <h3>Programadores Iniciantes</h3>
+                        <p>Use o OpenCode como seu mentor de programação. Ele escreve, explica e refatora código enquanto você aprende na prática.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <h3>Curiosos & Hard-Users de IA</h3>
+                        <p>Vá além do ChatGPT. Tenha um agente de IA que entende seu projeto, acessa seus arquivos e executa comandos no seu computador.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O que você leva Section -->
+        <section id="conteudo" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">O que está <span class="gradient-text">incluído</span></h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="content-number">01</div>
+                        <h3>Guia de Introdução</h3>
+                        <p>O que é OpenCode + OpenRouter, como funcionam, por que usá-los juntos e qual modelo escolher para cada tarefa.</p>
+                        <span class="content-tag">Teoria + Visão Geral</span>
+                    </div>
+                    <div class="content-card">
+                        <div class="content-number">02</div>
+                        <h3>Tutorial de Instalação no Windows</h3>
+                        <p>Passo a passo completo: WSL, npm, Chocolatey, configuração de API keys, OpenRouter e primeiros comandos.</p>
+                        <span class="content-tag">Mão na Massa</span>
+                    </div>
+                    <div class="content-card">
+                        <div class="content-number">03</div>
+                        <h3>Guia de Uso Avançado</h3>
+                        <p>Casos de uso por perfil, comandos essenciais, customização com AGENTS.md, skills, MCP servers, troubleshooting.</p>
+                        <span class="content-tag">Referência</span>
+                    </div>
+                    <div class="content-card">
+                        <div class="content-number">04</div>
+                        <h3>Templates de Prompt</h3>
+                        <p>20+ prompts prontos para usar no OpenCode: criação de APIs, automação de tarefas, análise de dados, estudo e muito mais.</p>
+                        <span class="content-tag">Produtividade Imediata</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Por que OpenRouter Section -->
+        <section class="why-section">
+            <div class="section-container">
+                <h2 class="section-title">Por que <span class="gradient-text">OpenRouter</span></h2>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <h3>Um acesso, todos os modelos</h3>
+                        <p>Conecte-se a Claude, GPT, Gemini, Llama e centenas de outros modelos através de <strong>uma única API</strong>. Sem assinatura de cada serviço separadamente.</p>
+                    </div>
+                    <div class="why-card">
+                        <h3>Pagamento por uso</h3>
+                        <p>Nada de assinatura fixa. Você <strong>paga só pelo que usar</strong>, por token. Ideal para testes, projetos pessoais e uso profissional moderado.</p>
+                    </div>
+                    <div class="why-card">
+                        <h3>Modelos gratuitos disponíveis</h3>
+                        <p>OpenRouter oferece modelos gratuitos com limites generosos. Você pode começar a usar o OpenCode <strong>sem gastar nada</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preços -->
+        <section class="pricing-section">
+            <div class="section-container">
+                <h2 class="section-title">Invista no seu <span class="gradient-text">aprendizado</span></h2>
+                <div class="pricing-box">
+                    <div class="pricing-badge">LANÇAMENTO</div>
+                    <h3>Bundle Completo OpenCode + OpenRouter</h3>
+                    <div class="pricing-value">
+                        <span class="pricing-old">De R$ 47,00</span>
+                        <span class="pricing-current">R$ <strong>17</strong><small>,00</small></span>
+                    </div>
+                    <p class="pricing-subtitle">Pagamento único. Acesso vitalício. Atualizações gratuitas.</p>
+                    <ul class="pricing-list">
+                        <li>4 guias práticos em PDF/Markdown</li>
+                        <li>20+ templates de prompt prontos</li>
+                        <li>Atualizações vitalícias</li>
+                        <li>Suporte via e-mail</li>
+                    </ul>
+                    <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="btn-primary btn-large" id="btn-purchase-cta">
+                        QUERO MEU BUNDLE
+                    </a>
+                    <div class="pricing-security">
+                        <span>🔒 Pagamento 100% seguro</span>
+                        <span>⏱️ Garantia de 7 dias</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="section-container">
+                <h2 class="section-title">Perguntas <span class="gradient-text">Frequentes</span></h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question" id="faq-q1">
+                            Preciso saber programar para usar? <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Não! O bundle foi feito para todos os níveis. O guia começa do absoluto zero — instalação do terminal, primeiros comandos até uso avançado. Empresários e curiosos conseguem acompanhar sem experiência prévia.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" id="faq-q2">
+                            Preciso ter assinatura do ChatGPT ou Claude? <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Não. Com o OpenRouter você paga apenas pelo que consumir (centavos por uso) ou usa modelos gratuitos. Você também pode conectar sua conta do ChatGPT Plus ou GitHub Copilot se já tiver.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" id="faq-q3">
+                            Funciona no Windows 10/11? <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! O tutorial cobre Windows 10 e 11 com duas abordagens: via WSL (recomendada) e via npm/powershell nativo. Você escolhe a que funciona melhor para seu setup.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" id="faq-q4">
+                            Como funciona a garantia de 7 dias? <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Se você ler o material e achar que não agregou valor, basta nos enviar um e-mail em até 7 dias. Devolvemos 100% do seu dinheiro, sem perguntas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">▲ OpenCode Bundle</span>
+                <p>Seu atalho para dominar agentes de IA no Windows.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://opencode.ai">OpenCode Oficial</a>
+                <a href="https://openrouter.ai">OpenRouter</a>
+                <a href="https://github.com/anomalyco/opencode">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 OpenCode Bundle. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
