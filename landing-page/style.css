@@ -341,7 +341,7 @@ body {
 
 .audience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
@@ -387,7 +387,7 @@ body {
 
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
@@ -732,6 +732,9 @@ body {
     .section-title { font-size: 2rem; }
 
     .footer-content { flex-direction: column; text-align: center; align-items: center; }
+
+    .audience-grid,
+    .content-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
@@ -742,10 +745,8 @@ body {
     .cta-group { flex-direction: column; width: 100%; }
     .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
 
-    .pricing-box { padding: 2.5rem 1.5rem; }
-    .pricing-current strong { font-size: 3.5rem; }
+    .audience-grid,
+    .content-grid { grid-template-columns: 1fr; }
 
     .nav-links a:not(.nav-cta) { display: none; }
-
-    .pricing-security { flex-direction: column; gap: 0.5rem; }
 }
