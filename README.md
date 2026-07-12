@@ -1,8 +1,10 @@
 # OpenCode + OpenRouter Bundle
 
-> Guia completo para usar agentes de IA no Windows com OpenCode + OpenRouter.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Este repositório contém material gratuito e open-source para aprender a instalar, configurar e usar o **OpenCode** (agente de IA open source) com **OpenRouter** (gateway unificado de modelos) no Windows.
+> Guia completo e open-source para usar agentes de IA no Windows com OpenCode + OpenRouter.
+
+Este repositório contém material gratuito — licenciado sob MIT — para aprender a instalar, configurar e usar o **OpenCode** (agente de IA open source) com **OpenRouter** (gateway unificado de modelos) no Windows.
 
 ## Conteúdo
 
