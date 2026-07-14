@@ -55,4 +55,82 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 4. Docs Tabs interaction
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetTab = btn.getAttribute('data-tab');
+            
+            tabButtons.forEach(b => b.classList.remove('active'));
+            tabPanels.forEach(p => p.classList.remove('active'));
+            
+            btn.classList.add('active');
+            const targetPanel = document.getElementById(targetTab);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+
+    // 5. Subtabs interaction (WSL vs Native)
+    const subtabButtons = document.querySelectorAll('.subtab-btn');
+    const subPanels = document.querySelectorAll('.sub-panel');
+
+    subtabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetSub = btn.getAttribute('data-subtab');
+            
+            subtabButtons.forEach(b => b.classList.remove('active'));
+            subPanels.forEach(p => p.classList.remove('active'));
+            
+            btn.classList.add('active');
+            const targetSubPanel = document.getElementById(targetSub);
+            if (targetSubPanel) {
+                targetSubPanel.classList.add('active');
+            }
+        });
+    });
+
+    // 6. Copy code functionality
+    const copyButtons = document.querySelectorAll('.copy-btn');
+    copyButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const codeEl = btn.parentElement.querySelector('code');
+            if (codeEl) {
+                const codeText = codeEl.innerText || codeEl.textContent;
+                navigator.clipboard.writeText(codeText).then(() => {
+                    btn.textContent = 'Copiado!';
+                    btn.classList.add('copied');
+                    setTimeout(() => {
+                        btn.textContent = 'Copiar';
+                        btn.classList.remove('copied');
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Falha ao copiar: ', err);
+                });
+            }
+        });
+    });
+
+    // 7. Connect top cards to documentation tabs
+    const contentCards = document.querySelectorAll('.content-card');
+    const tabMapping = ['tab-introducao', 'tab-instalacao', 'tab-avancado', 'tab-prompts'];
+
+    contentCards.forEach((card, index) => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', () => {
+            const targetTabId = tabMapping[index];
+            const targetBtn = document.querySelector(`.tab-btn[data-tab="${targetTabId}"]`);
+            if (targetBtn) {
+                targetBtn.click();
+                const docsSection = document.getElementById('guia-pratico');
+                if (docsSection) {
+                    docsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    });
 });

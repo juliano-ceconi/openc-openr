@@ -21,8 +21,8 @@
         </div>
         <nav class="nav-links">
             <a href="#saber-mais">Saber Mais</a>
-            <a href="#conteudo">Conteúdo</a>
-            <a href="#conteudo" class="nav-cta">Ver Conteúdo</a>
+            <a href="#guia-pratico">Guia Prático</a>
+            <a href="#guia-pratico" class="nav-cta">Ver Guia</a>
         </nav>
     </header>
 
@@ -54,8 +54,8 @@
                     </div>
                 </div>
                 <div class="cta-group">
-                    <a href="#conteudo" class="btn-primary" id="btn-hero-cta">
-                        VER CONTEÚDO
+                    <a href="#guia-pratico" class="btn-primary" id="btn-hero-cta">
+                        VER GUIA PRÁTICO
                     </a>
                     <a href="#saber-mais" class="btn-secondary" id="btn-hero-secondary">
                         SAIBA MAIS
@@ -151,6 +151,346 @@
                         <h3>Templates de Prompt</h3>
                         <p>20+ prompts prontos para usar no OpenCode: criação de APIs, automação de tarefas, análise de dados, estudo e muito mais.</p>
                         <span class="content-tag">Produtividade Imediata</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guias Práticos e Documentação -->
+        <section id="guia-pratico" class="docs-section">
+            <div class="docs-container">
+                <div class="docs-header">
+                    <h2 class="section-title">Guia Prático <span class="gradient-text">Passo a Passo</span></h2>
+                    <p class="section-subtitle">Tudo o que você precisa para configurar e usar o OpenCode com OpenRouter de forma 100% gratuita.</p>
+                </div>
+                
+                <div class="docs-wrapper">
+                    <!-- Menu Lateral de Abas -->
+                    <aside class="docs-sidebar">
+                        <button class="tab-btn active" data-tab="tab-introducao">
+                            <span class="tab-icon">📘</span>
+                            <span class="tab-title">1. Guia de Introdução</span>
+                        </button>
+                        <button class="tab-btn" data-tab="tab-instalacao">
+                            <span class="tab-icon">⚡</span>
+                            <span class="tab-title">2. Instalação Windows</span>
+                        </button>
+                        <button class="tab-btn" data-tab="tab-avancado">
+                            <span class="tab-icon">🛠️</span>
+                            <span class="tab-title">3. Uso Avançado & AGENTS</span>
+                        </button>
+                        <button class="tab-btn" data-tab="tab-prompts">
+                            <span class="tab-icon">📋</span>
+                            <span class="tab-title">4. Templates de Prompt</span>
+                        </button>
+                    </aside>
+                    
+                    <!-- Conteúdo das Abas -->
+                    <div class="docs-content">
+                        <!-- Aba 1: Introdução -->
+                        <div id="tab-introducao" class="tab-panel active">
+                            <h3>1. Guia de Introdução: OpenCode + OpenRouter</h3>
+                            <p class="panel-lead">Seu primeiro passo para dominar agentes de IA no terminal do Windows.</p>
+                            <hr class="panel-divider">
+                            
+                            <h4>O que é OpenCode?</h4>
+                            <p><strong>OpenCode</strong> é um agente de IA open-source que opera diretamente no seu terminal (ou como app desktop/IDE). Ele entende seu projeto, acessa seus arquivos, roda comandos e escreve código — tudo orquestrado por modelos de linguagem (LLMs).</p>
+                            <p>Diferente de chatbots comuns como ChatGPT, o OpenCode tem <strong>contexto completo do seu projeto</strong>: ele lê a estrutura de diretórios, entende suas dependências, conhece suas convenções de código (via <code>AGENTS.md</code>) e executa ações reais no sistema, como instalar pacotes, criar arquivos e fazer commits.</p>
+                            
+                            <div class="alert-box alert-note">
+                                <span class="alert-icon">💡</span>
+                                <div class="alert-content">
+                                    <strong>Características principais:</strong> 100% open-source, multi-provedor (funciona com Claude, GPT, Gemini, Llama), multi-sessão (agentes em paralelo), LSP-aware (entende a estrutura do código) e expansível com Skills e MCP.
+                                </div>
+                            </div>
+
+                            <h4>O que é OpenRouter?</h4>
+                            <p>O <strong>OpenRouter</strong> é um gateway unificado de APIs para modelos de IA. Em vez de criar contas e cadastrar cartões de crédito em múltiplos provedores (OpenAI, Anthropic, Google, Meta...), você utiliza <strong>uma única API key</strong> para acessar centenas de modelos pagando apenas pelo consumo real de tokens (ou usando modelos gratuitos).</p>
+                            
+                            <h4>Por que usar juntos?</h4>
+                            <p>O OpenCode precisa de modelos de IA para rodar. Ao conectá-lo ao OpenRouter, você ganha acesso a todo o catálogo mundial de IA com uma única chave e uma única conta. É a forma mais econômica e prática de rodar o seu assistente local.</p>
+                            
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Modelo</th>
+                                            <th>Custo por 1M tokens (entrada/saída)</th>
+                                            <th>Indicação de Uso</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Claude Sonnet 4</strong></td>
+                                            <td>~$3.00 / $15.00</td>
+                                            <td>Melhor inteligência de código e arquitetura</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>GPT-4o</strong></td>
+                                            <td>~$2.50 / $10.00</td>
+                                            <td>Excelente para lógica e tarefas rápidas</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Gemini 2.5 Pro</strong></td>
+                                            <td>~$1.25 / $5.00</td>
+                                            <td>Grande volume de contexto e documentação</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>DeepSeek V3</strong></td>
+                                            <td>~$0.50 / $2.00</td>
+                                            <td>Máximo custo-benefício para rotinas diárias</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Llama 3.1 70B</strong></td>
+                                            <td><strong>Gratuito (Free)</strong></td>
+                                            <td>Ideal para testes e aprendizado grátis</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- Aba 2: Instalação Windows -->
+                        <div id="tab-instalacao" class="tab-panel">
+                            <h3>2. Instalação: OpenCode + OpenRouter no Windows</h3>
+                            <p class="panel-lead">Configure seu ambiente de desenvolvimento assistido por IA em 15 minutos.</p>
+                            <hr class="panel-divider">
+                            
+                            <div class="alert-box alert-tip">
+                                <span class="alert-icon">⭐</span>
+                                <div class="alert-content">
+                                    <strong>Duas opções de instalação:</strong> A Rota A (WSL - Windows Subsystem for Linux) é altamente recomendada devido ao desempenho superior de arquivos e compatibilidade total. A Rota B é nativa no Windows usando Node.js/npm.
+                                </div>
+                            </div>
+                            
+                            <h4>Passo 1: Criar conta grátis no OpenRouter</h4>
+                            <p>Antes de instalar as ferramentas, você precisa da chave de API que conecta o agente aos modelos de linguagem:</p>
+                            <ol class="step-list">
+                                <li>Acesse o site oficial do <a href="https://openrouter.ai" target="_blank" rel="noopener noreferrer" class="link-external">OpenRouter.ai ↗</a> e crie uma conta gratuita (pode usar login direto com Google ou GitHub).</li>
+                                <li>Vá para a seção de chaves em <a href="https://openrouter.ai/keys" target="_blank" rel="noopener noreferrer" class="link-external">openrouter.ai/keys ↗</a>.</li>
+                                <li>Clique em <strong>Create Key</strong>, dê um nome para ela (exemplo: "opencode-local") e salve.</li>
+                                <li><strong>Importante:</strong> Copie e guarde a chave gerada (ela começa com <code>sk-or-...</code>). Ela é exibida apenas uma vez.</li>
+                            </ol>
+                            
+                            <div class="accordion-subtabs">
+                                <div class="subtab-header">
+                                    <button class="subtab-btn active" data-subtab="sub-wsl">Rota A: WSL (Recomendada)</button>
+                                    <button class="subtab-btn" data-subtab="sub-native">Rota B: Instalação Nativa (npm)</button>
+                                </div>
+                                
+                                <div class="subtab-content">
+                                    <!-- Rota A: WSL -->
+                                    <div id="sub-wsl" class="sub-panel active">
+                                        <h5>1. Instalar WSL (Ubuntu)</h5>
+                                        <p>Abra o <strong>PowerShell como Administrador</strong> e execute o comando abaixo para ativar o Linux integrado ao Windows:</p>
+                                        <div class="code-wrapper">
+                                            <pre><code class="language-powershell">wsl --install</code></pre>
+                                            <button class="copy-btn">Copiar</button>
+                                        </div>
+                                        <p>Reinicie o computador quando solicitado. Ao reiniciar, o terminal do Ubuntu abrirá automaticamente para você definir seu usuário e senha do Linux.</p>
+                                        
+                                        <h5>2. Instalar OpenCode no Ubuntu</h5>
+                                        <p>No terminal do Ubuntu (WSL), execute o instalador oficial:</p>
+                                        <div class="code-wrapper">
+                                            <pre><code class="language-bash">curl -fsSL https://opencode.ai/install | bash</code></pre>
+                                            <button class="copy-btn">Copiar</button>
+                                        </div>
+                                        <p>Recarregue as configurações de terminal:</p>
+                                        <div class="code-wrapper">
+                                            <pre><code class="language-bash">source ~/.bashrc</code></pre>
+                                            <button class="copy-btn">Copiar</button>
+                                        </div>
+                                        
+                                        <h5>3. Configurar a Chave do OpenRouter no WSL</h5>
+                                        <p>Crie o diretório de configurações do OpenCode:</p>
+                                        <div class="code-wrapper">
+                                            <pre><code class="language-bash">mkdir -p ~/.config/opencode</code></pre>
+                                            <button class="copy-btn">Copiar</button>
+                                        </div>
+                                        <p>Agora crie o arquivo <code>config.json</code> para salvar sua chave. Você pode colar a estrutura JSON abaixo substituindo <code>sua-chave-aqui</code>:</p>
+                                        <div class="code-wrapper">
+                                            <pre><code class="language-json">{
+  "provider": "openrouter",
+  "openRouterApiKey": "sk-or-v1-sua-chave-aqui",
+  "model": "meta-llama/llama-3.1-70b"
+}</code></pre>
+                                            <button class="copy-btn">Copiar</button>
+                                        </div>
+                                        
+                                        <div class="alert-box alert-note">
+                                            <span class="alert-icon">💡</span>
+                                            <div class="alert-content">
+                                                <strong>Modelo Gratuito:</strong> Por padrão, definimos o <code>meta-llama/llama-3.1-70b</code> que é 100% gratuito no OpenRouter. Você pode rodar à vontade sem adicionar saldo!
+                                            </div>
+                                        </div>
+                                        
+                                        <h5>4. Acessando seus projetos do Windows no WSL</h5>
+                                        <p>Seus arquivos do Windows (C:, D:, etc.) ficam mapeados dentro do WSL na pasta <code>/mnt/</code>. Navegue até seu projeto:</p>
+                                        <div class="code-wrapper">
+                                            <pre><code class="language-bash">cd /mnt/c/Users/SeuNome/Documents/meu-projeto
+opencode</code></pre>
+                                            <button class="copy-btn">Copiar</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Rota B: Nativa -->
+                                    <div id="sub-native" class="sub-panel">
+                                        <h5>1. Instalar Node.js</h5>
+                                        <p>Baixe e instale a versão LTS recomendada do <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer" class="link-external">Node.js ↗</a>. Certifique-se de marcar a opção para adicionar ao PATH do sistema durante a instalação.</p>
+                                        
+                                        <h5>2. Instalar OpenCode via npm</h5>
+                                        <p>Abra o <strong>PowerShell</strong> e rode o instalador global:</p>
+                                        <div class="code-wrapper">
+                                            <pre><code class="language-powershell">npm install -g opencode-ai</code></pre>
+                                            <button class="copy-btn">Copiar</button>
+                                        </div>
+                                        
+                                        <h5>3. Salvar Variável de Ambiente no Windows</h5>
+                                        <p>Execute no PowerShell para definir permanentemente sua chave do OpenRouter:</p>
+                                        <div class="code-wrapper">
+                                            <pre><code class="language-powershell">[System.Environment]::SetEnvironmentVariable('OPENROUTER_API_KEY', 'sk-or-v1-sua-chave-aqui', 'User')</code></pre>
+                                            <button class="copy-btn">Copiar</button>
+                                        </div>
+                                        <p><em>Reinicie o terminal do PowerShell após este comando para que a chave seja carregada.</em></p>
+                                        
+                                        <h5>4. Inicializar o OpenCode</h5>
+                                        <p>Navegue até a pasta do seu projeto e chame o assistente:</p>
+                                        <div class="code-wrapper">
+                                            <pre><code class="language-powershell">cd C:\projetos\meu-projeto
+opencode</code></pre>
+                                            <button class="copy-btn">Copiar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4>Passo 2: Configurando seu Projeto (/init)</h4>
+                            <p>Na primeira vez que rodar o OpenCode dentro de uma pasta de projeto, envie o comando especial:</p>
+                            <div class="code-wrapper">
+                                <pre><code class="language-plaintext">/init</code></pre>
+                                <button class="copy-btn">Copiar</button>
+                            </div>
+                            <p>Este comando criará o arquivo <code>AGENTS.md</code> na raiz do projeto. Ele funciona como a governança do seu agente, permitindo ditar regras personalizadas de desenvolvimento (exemplo: padrão de código, banco de dados preferido, pastas a evitar).</p>
+                        </div>
+                        
+                        <!-- Aba 3: Uso Avançado -->
+                        <div id="tab-avancado" class="tab-panel">
+                            <h3>3. Guia de Uso Avançado & Boas Práticas</h3>
+                            <p class="panel-lead">Comandos, truques e gerenciamento inteligente para extrair a máxima produtividade.</p>
+                            <hr class="panel-divider">
+                            
+                            <h4>Comandos Essenciais do Terminal OpenCode</h4>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Comando</th>
+                                            <th>Ação no Terminal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>/help</code></td>
+                                            <td>Lista todos os comandos integrados da CLI</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/undo</code></td>
+                                            <td>Desfaz a última alteração de arquivo gerada pela IA</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/model</code></td>
+                                            <td>Troca o modelo ativo do OpenRouter em tempo real</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/clear</code></td>
+                                            <td>Limpa o histórico do chat atual para economizar tokens</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>Tab</code></td>
+                                            <td>Alterna entre <strong>Plan Mode</strong> (planejamento) e <strong>Build Mode</strong> (escrita direta)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <h4>Otimizando seus Gastos no OpenRouter</h4>
+                            <p>Se você optar por usar modelos pagos além dos modelos free, use a estratégia de alternância inteligente para economizar:</p>
+                            <ul>
+                                <li>Use o modelo gratuito <code>meta-llama/llama-3.1-70b</code> para tarefas repetitivas, perguntas de documentação e revisão de código simples.</li>
+                                <li>Use o modelo <code>deepseek/deepseek-chat</code> (DeepSeek V3) para desenvolvimento ativo, pois tem um custo de entrada extremamente baixo (~$0.14 por milhão de tokens) e ótima capacidade lógica.</li>
+                                <li>Reserve o <code>anthropic/claude-sonnet-4</code> para tarefas de grande complexidade arquitetural, refatorações multi-arquivo ou debug complexo.</li>
+                            </ul>
+                            
+                            <div class="alert-box alert-warning">
+                                <span class="alert-icon">⚠️</span>
+                                <div class="alert-content">
+                                    <strong>Dica de Economia:</strong> Use frequentemente o comando <code>/clear</code> para esvaziar a conversa quando concluir uma subtarefa. Sessões muito longas acumulam contexto, o que aumenta o consumo de tokens a cada pergunta.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Aba 4: Templates de Prompt -->
+                        <div id="tab-prompts" class="tab-panel">
+                            <h3>4. Templates de Prompt Prontos</h3>
+                            <p class="panel-lead">Copie, adapte as variáveis entre colchetes [ ] e use diretamente no OpenCode para acelerar suas entregas.</p>
+                            <hr class="panel-divider">
+                            
+                            <div class="prompt-card">
+                                <h5>Criação de API REST Completa</h5>
+                                <p class="prompt-desc">Gera um servidor backend completo com validação de dados, banco e tratamento de erros.</p>
+                                <div class="code-wrapper">
+                                    <pre><code class="language-plaintext">Crie uma API REST em [Node.js/Python/Go] com os seguintes endpoints:
+- GET /api/items (listar todos)
+- POST /api/items (criar um item)
+- DELETE /api/items/:id (deletar item)
+
+Use [SQLite/PostgreSQL] como banco. Inclua:
+- Validação de dados de entrada
+- Tratamento de erros estruturado
+- Um README.md detalhando como rodar a aplicação</code></pre>
+                                    <button class="copy-btn">Copiar</button>
+                                </div>
+                            </div>
+                            
+                            <div class="prompt-card">
+                                <h5>Script de Automação de Arquivos (Python)</h5>
+                                <p class="prompt-desc">Ideal para profissionais liberais automatizarem a extração e consolidação de dados em arquivos.</p>
+                                <div class="code-wrapper">
+                                    <pre><code class="language-plaintext">Crie um script em Python que:
+1. Leia todos os arquivos PDF no diretório atual
+2. Extraia campos específicos: Data, Valor Total, CNPJ e Nome do Cliente
+3. Salve esses resultados estruturados em uma planilha Excel (.xlsx) na pasta ./relatorios/
+4. Adicione tratamento de erro para ignorar arquivos corrompidos</code></pre>
+                                    <button class="copy-btn">Copiar</button>
+                                </div>
+                            </div>
+                            
+                            <div class="prompt-card">
+                                <h5>Revisão de Código Securitária e de Performance</h5>
+                                <p class="prompt-desc">Analisa um arquivo local indicando falhas estruturais, segurança e boas práticas.</p>
+                                <div class="code-wrapper">
+                                    <pre><code class="language-plaintext">Revise o código em @[caminho/do/arquivo] e identifique:
+1. Problemas latentes de segurança (ex: SQL injection, XSS ou vazamento de segredos)
+2. Gargalos de performance em loops ou chamadas de banco
+3. Violações de boas práticas do ecossistema
+Apresente sugestões de código corrigido.</code></pre>
+                                    <button class="copy-btn">Copiar</button>
+                                </div>
+                            </div>
+                            
+                            <div class="prompt-card">
+                                <h5>Explicar Código Legado ou Complexo</h5>
+                                <p class="prompt-desc">Ótimo para devs iniciantes entenderem lógicas complexas escritas por outros desenvolvedores.</p>
+                                <div class="code-wrapper">
+                                    <pre><code class="language-plaintext">Explique detalhadamente o que o código em @[caminho/do/arquivo] faz.
+Imagine que você está explicando para um desenvolvedor iniciante (noob-friendly). 
+Inclua:
+1. Um resumo da responsabilidade da classe/função
+2. O fluxo passo a passo dos dados
+3. O significado das principais variáveis</code></pre>
+                                    <button class="copy-btn">Copiar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
