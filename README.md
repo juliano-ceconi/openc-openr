@@ -1,8 +1,8 @@
-# OpenCode + OpenRouter Bundle
+# opencro
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> Guia completo e open-source para usar agentes de IA no Windows com OpenCode + OpenRouter.
+> Guia completo e open-source para usar agentes de IA no Windows com OpenCode + OpenRouter (opencro).
 
 Este repositório contém material gratuito — licenciado sob MIT — para aprender a instalar, configurar e usar o **OpenCode** (agente de IA open source) com **OpenRouter** (gateway unificado de modelos) no Windows.
 
@@ -27,7 +27,7 @@ Este repositório contém material gratuito — licenciado sob MIT — para apre
 
 ## Bônus de Governança: Okam CLI 🧠
 
-Aprenda a configurar e usar o **Okam CLI** para gerenciar sessões de IA locais, garantir governança do projeto através de ganchos (hooks) automatizados de pré e pós-comando, e expandir a inteligência do agente com skills reutilizáveis. As instruções de instalação e uso avançado estão descritas no `conteudo/tutorial-instalacao-windows.md`, no `conteudo/guia-uso-avancado.md` e na landing page oficial.
+Aprenda a configurar e usar o **Okam CLI** para gerenciar sessões de IA locais, garantir governança do projeto através de ganchos (hooks) automatizados de pré e pós-comando, e expandir a inteligência do agente com skills reutilizáveis. As instruções de instalação e uso avançado estão descritas no `conteudo/tutorial-instalacao-windows.md`, no `conteudo/guia-uso-avancado.md` e na landing page oficial em https://opencro.vercel.app.
 
 ## Licença
 
