@@ -176,11 +176,15 @@
                         </button>
                         <button class="tab-btn" data-tab="tab-avancado">
                             <span class="tab-icon">🛠️</span>
-                            <span class="tab-title">3. Uso Avançado, AGENTS & Okam</span>
+                            <span class="tab-title">3. Uso Avançado & AGENTS</span>
                         </button>
                         <button class="tab-btn" data-tab="tab-prompts">
                             <span class="tab-icon">📋</span>
                             <span class="tab-title">4. Templates de Prompt</span>
+                        </button>
+                        <button class="tab-btn" data-tab="tab-okam">
+                            <span class="tab-icon">🧠</span>
+                            <span class="tab-title">5. Governança & Okam</span>
                         </button>
                     </aside>
                     
@@ -426,55 +430,6 @@ opencode</code></pre>
                                     <strong>Dica de Economia:</strong> Use frequentemente o comando <code>/clear</code> para esvaziar a conversa quando concluir uma subtarefa. Sessões muito longas acumulam contexto, o que aumenta o consumo de tokens a cada pergunta.
                                 </div>
                             </div>
-                            
-                            <hr class="panel-divider">
-                            
-                            <h4>Bônus: Governança de IA Local com Okam CLI</h4>
-                            <p>O <strong>Okam</strong> é uma ferramenta complementar open-source para governança local de IA. Ele atua como o "caderno de memórias e regras" do seu assistente de IA, gerenciando suas sessões, aplicando ganchos (hooks) de validação e estendendo o assistente com skills especializadas.</p>
-                            
-                            <h5>1. Instalação Rápida</h5>
-                            <p>Instale globalmente via npm no terminal (PowerShell ou WSL) se já tiver o Node.js instalado:</p>
-                            <div class="code-wrapper">
-                                <pre><code class="language-bash">npm install -g okam-cli</code></pre>
-                                <button class="copy-btn">Copiar</button>
-                            </div>
-                            
-                            <h5>2. Inicializando no Projeto</h5>
-                            <p>Navegue até a raiz do seu projeto e execute:</p>
-                            <div class="code-wrapper">
-                                <pre><code class="language-bash">okam init</code></pre>
-                                <button class="copy-btn">Copiar</button>
-                            </div>
-                            <p>Isso criará o arquivo de configuração local <code>.okamrc</code>.</p>
-                            
-                            <h5>3. Automação com Hooks (Ganchos)</h5>
-                            <p>Adicione validações automáticas antes ou depois de cada comando no seu arquivo <code>.okamrc</code>:</p>
-                            <div class="code-wrapper">
-                                <pre><code class="language-yaml">hooks:
-  pre-command:
-    - "git fetch origin"
-  post-command:
-    - "npm run lint"</code></pre>
-                                <button class="copy-btn">Copiar</button>
-                            </div>
-                            
-                            <h5>4. Auditoria Pré-Commit (Modo Pipe)</h5>
-                            <p>Valide suas alterações de código enviando o diff do Git diretamente para o Okam antes de commitar:</p>
-                            <div class="code-wrapper">
-                                <pre><code class="language-bash">git diff --cached | okam run "revise este diff e aponte falhas de segurança ou credenciais expostas"</code></pre>
-                                <button class="copy-btn">Copiar</button>
-                            </div>
-                            
-                            <h5>5. Gerenciando Skills</h5>
-                            <p>Skills estendem as instruções padrão do assistente. Gerencie-as com facilidade:</p>
-                            <div class="code-wrapper">
-                                <pre><code class="language-bash"># Instalar a skill de checklists ADHD-friendly
-okam skill install checklists
-
-# Listar skills instaladas
-okam skill list</code></pre>
-                                <button class="copy-btn">Copiar</button>
-                            </div>
                         </div>
                         
                         <!-- Aba 4: Templates de Prompt -->
@@ -538,6 +493,85 @@ Inclua:
 3. O significado das principais variáveis</code></pre>
                                     <button class="copy-btn">Copiar</button>
                                 </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Aba 5: Governança & Okam CLI -->
+                        <div id="tab-okam" class="tab-panel">
+                            <h3>5. Governança Local de IA com Okam CLI</h3>
+                            <p class="panel-lead">Implemente regras de governança estritas, controle sessões e configure hooks automatizados no seu ambiente de IA.</p>
+                            <hr class="panel-divider">
+                            
+                            <!-- Cartões de Links Úteis do Okam -->
+                            <div class="okam-links-container">
+                                <a href="https://okam-os.vercel.app/" target="_blank" rel="noopener noreferrer" class="okam-link-card">
+                                    <span class="card-icon">🔗</span>
+                                    <div class="card-text">
+                                        <strong>Página Oficial</strong>
+                                        <span>okam-os.vercel.app ↗</span>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/juliano-ceconi/okam" target="_blank" rel="noopener noreferrer" class="okam-link-card">
+                                    <span class="card-icon">💾</span>
+                                    <div class="card-text">
+                                        <strong>Código-Fonte</strong>
+                                        <span>github.com/juliano-ceconi/okam ↗</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <h4>O que é o Okam CLI?</h4>
+                            <p>O <strong>Okam</strong> é uma ferramenta complementar e open-source para a governança local de agentes de IA. Ele atua como um gerenciador de diretrizes ("caderno de regras e memórias"), garantindo que os assistentes de IA respeitem as convenções do seu projeto e executem ações automáticas de segurança, como evitar commits com segredos expostos.</p>
+                            
+                            <h4>1. Instalação Rápida</h4>
+                            <p>Instale o Okam globalmente via npm no terminal (PowerShell ou WSL). Requer Node.js >= 18:</p>
+                            <div class="code-wrapper">
+                                <pre><code class="language-bash">npm install -g okam-cli</code></pre>
+                                <button class="copy-btn">Copiar</button>
+                            </div>
+                            <p>Verifique a versão para certificar a correta instalação:</p>
+                            <div class="code-wrapper">
+                                <pre><code class="language-bash">okam --version</code></pre>
+                                <button class="copy-btn">Copiar</button>
+                            </div>
+                            
+                            <h4>2. Inicializando no seu Projeto</h4>
+                            <p>Navegue até a raiz do seu código e execute o setup inicial:</p>
+                            <div class="code-wrapper">
+                                <pre><code class="language-bash">okam init</code></pre>
+                                <button class="copy-btn">Copiar</button>
+                            </div>
+                            <p>Isso gerará o arquivo local de configuração <code>.okamrc</code>.</p>
+                            
+                            <h4>3. Automação de Governança com Hooks (Ganchos)</h4>
+                            <p>Os hooks do Okam permitem disparar comandos no terminal automaticamente antes (<code>pre-command</code>) e depois (<code>post-command</code>) de cada interação com a IA:</p>
+                            <div class="code-wrapper">
+                                <pre><code class="language-yaml">hooks:
+  pre-command:
+    # Atualiza as ramificações locais antes de propor modificações
+    - "git fetch origin"
+  post-command:
+    # Roda o validador de sintaxe ou testes automaticamente para checar a IA
+    - "npm run lint && npm test"</code></pre>
+                                <button class="copy-btn">Copiar</button>
+                            </div>
+                            
+                            <h4>4. Auditoria de Código com Pipes do Git</h4>
+                            <p>Você pode encadear comandos no terminal para submeter trechos ou o diff completo para revisão da IA antes de fechar um commit:</p>
+                            <div class="code-wrapper">
+                                <pre><code class="language-bash">git diff --cached | okam run "revise este diff e aponte problemas de segurança, credenciais ou segredos expostos"</code></pre>
+                                <button class="copy-btn">Copiar</button>
+                            </div>
+                            
+                            <h4>5. Estendendo com Skills</h4>
+                            <p>Skills são diretórios contendo pacotes estruturados de instruções (como regras de Clean Code ou Checklists TDAH). Instale-as facilmente:</p>
+                            <div class="code-wrapper">
+                                <pre><code class="language-bash"># Instalar uma skill a partir do repositório
+okam skill install checklists
+
+# Listar skills atualmente ativas na sessão
+okam skill list</code></pre>
+                                <button class="copy-btn">Copiar</button>
                             </div>
                         </div>
                     </div>

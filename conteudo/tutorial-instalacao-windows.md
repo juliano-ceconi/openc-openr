@@ -211,6 +211,8 @@ Verifique se a instalação foi bem-sucedida:
 okam --version
 ```
 
+Para configurar hooks de automação, gerenciar diretrizes e auditar commits, veja o guia completo em [Governança Local com Okam CLI](governanca-okam-cli.md).
+
 ---
 
 ## Troubleshooting rápido

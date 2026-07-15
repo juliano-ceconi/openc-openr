@@ -1163,3 +1163,59 @@ body {
         padding: 1.25rem 1rem;
     }
 }
+
+/* Okam Links Cards styling */
+.okam-links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.okam-link-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: var(--transition);
+    box-shadow: var(--shadow-card);
+}
+
+.okam-link-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    background: var(--color-bg-alt);
+}
+
+.okam-link-card .card-icon {
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary-glow);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    color: var(--color-primary);
+}
+
+.okam-link-card .card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.okam-link-card .card-text strong {
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.okam-link-card .card-text span {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.25rem;
+}

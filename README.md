@@ -16,6 +16,7 @@ Este repositório contém material gratuito — licenciado sob MIT — para apre
 | `tutorial-instalacao-windows.md` | Passo a passo completo: WSL e npm, configuração de API key, primeiros comandos |
 | `guia-uso-avancado.md` | Comandos, AGENTS.md, skills, MCP servers, casos de uso por perfil e truques |
 | `templates-prompt.md` | 21 prompts prontos para copy-paste: APIs, automação, estudo, DevOps e mais |
+| `governanca-okam-cli.md` | Guia completo do Okam CLI: instalação, sessões, hooks de automação e skills |
 
 ### `/landing-page`
 
@@ -27,7 +28,11 @@ Este repositório contém material gratuito — licenciado sob MIT — para apre
 
 ## Bônus de Governança: Okam CLI 🧠
 
-Aprenda a configurar e usar o **Okam CLI** para gerenciar sessões de IA locais, garantir governança do projeto através de ganchos (hooks) automatizados de pré e pós-comando, e expandir a inteligência do agente com skills reutilizáveis. As instruções de instalação e uso avançado estão descritas no `conteudo/tutorial-instalacao-windows.md`, no `conteudo/guia-uso-avancado.md` e na landing page oficial em https://opencro.vercel.app.
+O **Okam** é a ferramenta open-source ideal para governar seus agentes de IA locais, automatizar a revisão de diffs e garantir a integridade do seu código através de hooks de commit.
+
+* 🔗 **Página do Projeto**: [https://okam-os.vercel.app/](https://okam-os.vercel.app/)
+* 💾 **Repositório GitHub**: [https://github.com/juliano-ceconi/okam](https://github.com/juliano-ceconi/okam)
+* 📖 **Guia de Governança**: Veja as instruções completas no arquivo [`conteudo/governanca-okam-cli.md`](./conteudo/governanca-okam-cli.md) ou na aba dedicada da landing page em [https://opencro.vercel.app](https://opencro.vercel.app).
 
 ## Licença
 
