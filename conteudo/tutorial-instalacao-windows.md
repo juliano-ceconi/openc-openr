@@ -14,7 +14,7 @@
 
 ## Passo 1: Criar conta e obter chave de API no OpenRouter
 
-O OpenRouter conecta o assistente aos melhores modelos de linguagem do mercado (Claude, GPT, Gemini, DeepSeek) sob demanda.
+O OpenRouter conecta o assistente aos melhores modelos de linguagem do mercado (Claude Opus, GPT-5.5, Gemini 3, DeepSeek V4, GLM, MiniMax) sob demanda.
 
 1. Acesse [openrouter.ai](https://openrouter.ai) e crie uma conta gratuita (via Google ou GitHub).
 2. Vá para a seção de chaves em [openrouter.ai/keys](https://openrouter.ai/keys).
@@ -37,7 +37,7 @@ Esta opção é ideal para iniciantes, empresários e qualquer pessoa que prefir
 2. Clique no ícone de **Engrenagem (Configurações)** no canto inferior esquerdo.
 3. No campo de Provedor de IA, selecione **OpenRouter**.
 4. Cole a sua chave de API (`sk-or-...`) e salve as alterações.
-5. No menu de seleção de modelos, selecione seu modelo inicial. Sugerimos o `deepseek/deepseek-chat` pelo custo-benefício ou `meta-llama/llama-3.3-70b-instruct` para começar gratuitamente.
+5. No menu de seleção de modelos, selecione seu modelo inicial. Sugerimos o <code>deepseek/deepseek-v4-flash</code> pelo custo-benefício ou o <code>hy3</code> para começar gratuitamente.
 
 ### 3. Usar e interagir
 1. Clique em **Open Folder** (Abrir Pasta) e selecione o diretório dos seus arquivos no Windows.

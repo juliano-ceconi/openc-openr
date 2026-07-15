@@ -13,7 +13,7 @@ Este guia explica o que compõe essa tríade, por que usá-la e como as ferramen
 A sigla representa a união de três pilares de código aberto que formam a solução ideal de inteligência artificial local:
 
 1. **C (Code - OpenCode)**: O assistente e agente de IA. Pode ser usado tanto como um **App Desktop com interface visual** amigável (noob-friendly) quanto por terminal. O OpenCode lê seus arquivos locais, executa alterações e cria projetos do zero.
-2. **R (Router - OpenRouter)**: O gateway unificado de chaves de API. Permite que o OpenCode se conecte a centenas de modelos globais de IA (Claude, GPT, Gemini, DeepSeek) sob demanda, cobrando centavos pelo consumo de tokens ou disponibilizando modelos gratuitos.
+2. **R (Router - OpenRouter)**: O gateway unificado de chaves de API. Permite que o OpenCode se conecte a centenas de modelos globais de IA (Claude Opus, GPT-5.5, Gemini 3, DeepSeek V4, GLM, MiniMax) sob demanda, cobrando centavos pelo consumo de tokens ou disponibilizando modelos gratuitos.
 3. **O (Okam - Okam CLI)**: A governança local. Ele audita chaves e senhas para evitar vazamentos de segredos e garante que a IA siga as regras e padrões declarados no seu arquivo de diretrizes.
 
 ---
@@ -53,12 +53,12 @@ Esta tabela apresenta os modelos líderes recomendados no OpenRouter para uso in
 
 | Modelo de IA | Custo por 1M tokens (entrada/saída) | Indicação / Força |
 |---|---|---|
-| **Claude 3.5 Sonnet** | ~$3.00 / $15.00 | Líder supremo em inteligência lógica de código e arquitetura. |
-| **GPT-4o** | ~$2.50 / $10.00 | Altíssima velocidade para criação rápida de APIs e scripts. |
-| **Gemini 1.5 Pro** | ~$1.25 / $5.00 | Leitura e processamento de repositórios gigantescos (janela de 2M tokens). |
-| **DeepSeek V3** | ~$0.14 / $0.28 | Custo-benefício imbatível e excelente resposta para o dia a dia. |
-| **DeepSeek R1** | ~$0.55 / $2.19 | Modelo de raciocínio lógico avançado para solucionar bugs complexos. |
-| **Llama 3.3 70B** | **Gratuito / Centavos** | Ideal para testes rápidos, aprendizado e uso diário sem custos. |
+| **Claude Opus 4.8** | ~$5.00 / $25.00 | Líder supremo em inteligência lógica de código e refatoração profunda. |
+| **GPT-5.5** | ~$5.00 / $30.00 | Altíssima velocidade para criação rápida de APIs, scripts e multimodalidade. |
+| **DeepSeek V4 Pro** | ~$0.435 / $0.87 | O rei do custo-benefício profissional com excelente inteligência e robustez. |
+| **Gemini 3 Flash Preview** | ~$0.50 / $3.00 | Processamento de repositórios gigantescos com latência ultrabaixa. |
+| **MiMo-V2.5** | ~$0.105 / $0.28 | Excelente modelo alternativo e extremamente barato para tarefas gerais. |
+| **DeepSeek V4 Flash / Hy3** | **Gratuito / Centavos** | Ideal para testes rápidos, aprendizado e uso diário sem custos. |
 
 Com uso profissional regular (cerca de 25 sessões diárias), seu gasto real estimado ficará entre **US$ 5 e US$ 15 mensais** — um custo infinitamente menor que manter múltiplas assinaturas.
 
