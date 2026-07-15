@@ -1,131 +1,82 @@
-# Guia de Introdução: OpenCode + OpenRouter
+# Guia de Introdução: A Tríade OpenCRO (Code + Router + Okam)
 
-> Seu primeiro passo para dominar agentes de IA no terminal do Windows.
+> Seu primeiro passo para dominar o uso de agentes de IA no Windows sem complicação.
 
-Este guia responde as perguntas fundamentais: o que são essas ferramentas, por que usá-las juntas e como elas podem transformar sua relação com programação e automação.
+O **OpenCRO** é um ecossistema open-source integrado, projetado para oferecer um ambiente de desenvolvimento e automação assistido por inteligência artificial profissional, de forma flexível e gratuita para todos. 
+
+Este guia explica o que compõe essa tríade, por que usá-la e como as ferramentas funcionam juntas no seu dia a dia.
+
+---
+
+## O que é a Tríade OpenCRO?
+
+A sigla representa a união de três pilares de código aberto que formam a solução ideal de inteligência artificial local:
+
+1. **C (Code - OpenCode)**: O assistente e agente de IA. Pode ser usado tanto como um **App Desktop com interface visual** amigável (noob-friendly) quanto por terminal. O OpenCode lê seus arquivos locais, executa alterações e cria projetos do zero.
+2. **R (Router - OpenRouter)**: O gateway unificado de chaves de API. Permite que o OpenCode se conecte a centenas de modelos globais de IA (Claude, GPT, Gemini, DeepSeek) sob demanda, cobrando centavos pelo consumo de tokens ou disponibilizando modelos gratuitos.
+3. **O (Okam - Okam CLI)**: A governança local. Ele audita chaves e senhas para evitar vazamentos de segredos e garante que a IA siga as regras e padrões declarados no seu arquivo de diretrizes.
 
 ---
 
 ## O que é OpenCode?
 
-**OpenCode** é um agente de IA open source que opera no terminal (ou como app desktop/IDE). Ele entende seu projeto, acessa seus arquivos, executa comandos e escreve código — tudo orquestrado por modelos de linguagem (LLMs).
+O **OpenCode** é o coração da execução. Ele vai muito além dos assistentes de bate-papo tradicionais (como ChatGPT ou Claude Web) porque possui **contexto de projeto**: ele lê sua estrutura de arquivos, compreende as conexões entre pastas e edita os arquivos do seu computador de verdade.
 
-Diferente de chatbots como ChatGPT, o OpenCode tem **contexto do seu projeto**: ele lê sua estrutura de diretórios, entende suas dependências, conhece suas convenções de código (via `AGENTS.md`) e pode agir diretamente no seu sistema: criar arquivos, instalar pacotes, rodar testes, fazer commits.
+### Interfaces Disponíveis
 
-### Características principais
+- **Desktop App (Recomendado)**: Interface 100% visual com janelas. Abra pastas arrastando e soltando e edite códigos sem medo de terminal.
+- **Terminal (CLI/TUI)**: Para desenvolvedores avançados que preferem máxima velocidade direto na linha de comando.
+- **IDE Extension**: Integração no VS Code ou JetBrains.
 
-- **Open source** (160K+ estrelas no GitHub, 7.5M devs/mês)
-- **Multi-provedor**: funciona com qualquer LLM (Claude, GPT, Gemini, Llama, locais)
-- **Multi-sessão**: execute múltiplos agentes em paralho no mesmo projeto
-- **LSP-aware**: entende a estrutura do seu código com Language Server Protocol
-- **Skills**: plugins de instrução especializados para tarefas específicas
-- **Compartilhável**: gere links das suas sessões de trabalho
-
-### Interfaces disponíveis
-
-| Interface | Uso recomendado |
-|---|---|
-| Terminal (TUI) | Fluxo principal, máximo controle |
-| Desktop App | Experiência visual com janelas |
-| Web Client | Acesso remoto via navegador |
-| IDE Extension | Integração com VS Code / JetBrains |
+### Características Principais
+- **Open source** e mantido ativamente pela comunidade.
+- **Multi-provedor**: compatível com qualquer provedor de IA ou modelos locais.
+- **Customização por AGENTS.md**: um arquivo simples na raiz onde você dita as regras do seu projeto e a IA as obedece.
 
 ---
 
 ## O que é OpenRouter?
 
-**OpenRouter** é um gateway de API unificado para modelos de IA. Em vez de criar contas e assinaturas em cada provedor (OpenAI, Anthropic, Google, Meta...), você usa **uma única API** para acessar centenas de modelos.
+O **OpenRouter** é o fornecedor de inteligência. Em vez de assinar serviços mensais individuais (pagando U$20 na OpenAI, U$20 na Anthropic, etc.), você conecta sua conta gratuita do OpenRouter ao OpenCode. O OpenRouter consolida todas as APIs de IA do mercado sob **uma única chave**.
 
 ### Vantagens do OpenRouter
 
-- **Catálogo unificado**: Claude, GPT, Gemini, Llama, Mistral, DeepSeek e dezenas mais
-- **Pay-per-use**: paga só pelos tokens que consumir, sem assinatura fixa
-- **Modelos gratuitos**: opções com limite diário generoso para começar sem gastar
-- **Fallback automático**: se um modelo falha, OpenRouter tenta outro
-- **Leaderboard**: rankings públicos de performance por modelo
-- **MCP Server**: integração com assistentes de código via OAuth
+- **Sem Assinatura Fixa**: Você adiciona créditos sob demanda (ex: U$5) e paga apenas pelo consumo real de tokens. Se usar pouco, gastará centavos.
+- **Modelos Gratuitos**: Oferece excelentes modelos livres de custos para testes e automações básicas.
+- **Fallback Automático**: Se um provedor ficar lento ou cair, o sistema redireciona a chamada instantaneamente.
 
 ---
 
-## Por que usar OpenCode + OpenRouter juntos?
+## Tabela de Modelos e Custos (Referência Julho/2026)
 
-OpenCode precisa de um modelo de IA para funcionar. OpenRouter fornece acesso a **todos os modelos** via uma única chave de API. A combinação é natural:
+Esta tabela apresenta os modelos líderes recomendados no OpenRouter para uso integrado com o OpenCode:
 
-```
-OpenCode (agente) ←→ OpenRouter (gateway) ←→ Modelos (Claude, GPT, etc.)
-```
-
-**Sem OpenRouter**: você precisa de uma chave de API diferente para cada modelo, gerir assinaturas separadas e configurar provedores um a um.
-
-**Com OpenRouter**: uma chave, um cadastro, acesso a todos os modelos. Troque de modelo com uma linha de configuração.
-
-### Custo estimado
-
-| Modelo | Custo por 1M tokens (entrada/saída) | Indicação |
+| Modelo de IA | Custo por 1M tokens (entrada/saída) | Indicação / Força |
 |---|---|---|
-| Claude Sonnet 4 | ~$3 / $15 | Uso geral, equilíbrio |
-| GPT-4o | ~$2.50 / $10 | Código, análise |
-| Gemini 2.5 Pro | ~$1.25 / $5 | Tarefas longas |
-| DeepSeek V3 | ~$0.50 / $2 | Custo-benefício |
-| Llama 3 70B | Gratuito (limitado) | Testes |
+| **Claude 3.5 Sonnet** | ~$3.00 / $15.00 | Líder supremo em inteligência lógica de código e arquitetura. |
+| **GPT-4o** | ~$2.50 / $10.00 | Altíssima velocidade para criação rápida de APIs e scripts. |
+| **Gemini 1.5 Pro** | ~$1.25 / $5.00 | Leitura e processamento de repositórios gigantescos (janela de 2M tokens). |
+| **DeepSeek V3** | ~$0.14 / $0.28 | Custo-benefício imbatível e excelente resposta para o dia a dia. |
+| **DeepSeek R1** | ~$0.55 / $2.19 | Modelo de raciocínio lógico avançado para solucionar bugs complexos. |
+| **Llama 3.3 70B** | **Gratuito / Centavos** | Ideal para testes rápidos, aprendizado e uso diário sem custos. |
 
-Com uso moderado (20-30 sessões/dia), o gasto mensal fica entre **US$ 5 e US$ 20** — muito abaixo de assinaturas individuais de cada serviço.
-
----
-
-## Perfis de uso: como cada pessoa se beneficia
-
-### Empresários e Tomadores de Decisão
-
-- Crie protótipos funcionais de ideias de negócio sem time técnico
-- Automatize relatórios e extração de dados de planilhas
-- Analise contratos e documentos com IA
-- Valide viabilidade técnica de projetos antes de contratar devs
-
-### Profissionais Liberais (advogados, contadores, designers, consultores)
-
-- Gere minutas de contratos e documentos padronizados
-- Automatize renomeação e organização de arquivos
-- Crie scripts para extrair dados de PDFs e planilhas
-- Monitore prazos e gere alertas automáticos
-
-### Programadores Iniciantes
-
-- Use o OpenCode como mentor: peça explicações de código linha a linha
-- Crie projetos completos do zero com descrições em linguagem natural
-- Aprenda debugar: peça para o agente encontrar e corrigir erros
-- Entenda conceitos: "explique o que é uma closure com exemplos no meu projeto"
-
-### Curiosos e Hard-Users de IA
-
-- Configure skills especializadas (testes, documentação, deploy)
-- Conecte MCP servers para expandir capacidades do agente
-- Crie workflows multi-agente com sessões paralelas
-- Customize o comportamento do OpenCode via `AGENTS.md`
+Com uso profissional regular (cerca de 25 sessões diárias), seu gasto real estimado ficará entre **US$ 5 e US$ 15 mensais** — um custo infinitamente menor que manter múltiplas assinaturas.
 
 ---
 
-## Exemplo rápido: do zero ao código
+## Perfis de Uso: Como se beneficiar do OpenCRO
 
-Com OpenCode + OpenRouter instalados, você pode fazer:
+### Iniciantes e Curiosos
+Você pode usar a interface visual do App Desktop do OpenCode como um mentor. Abra um projeto de estudos, peça para ele explicar trechos de códigos ou criar mini-aplicações do zero em linguagem natural.
 
-```
-Você: "crie uma API REST em Node.js com Express que gerencie uma
-lista de tarefas (CRUD completo). Use SQLite como banco, inclua
-validação de dados e documentação swagger."
-```
+### Empresários e Profissionais Liberais
+Projete protótipos de novas ideias e automatize o dia a dia de forma rápida. Crie scripts que consolidam relatórios de planilhas, extraem dados de notas fiscais em PDF ou analisam minutas de contratos complexos.
 
-Em segundos, o OpenCode:
-1. Cria a estrutura de diretórios
-2. Gera `package.json`, `server.js`, rotas, modelos e controllers
-3. Instala as dependências
-4. Cria o banco SQLite com schema inicial
-5. Adiciona comentários e um `README.md`
-
-Tudo isso sem você escrever uma linha de código manualmente.
+### Programadores Avançados
+Conecte o terminal/TUI aos hooks do Git usando o **Okam CLI**. O Okam analisará automaticamente o código antes de qualquer commit para verificar conformidade com as regras do `AGENTS.md` e testar a integridade lógica.
 
 ---
 
-## Próximos passos
+## Próximos Passos
 
-Se você está no Windows, siga o **Tutorial de Instalação no Windows** para configurar tudo passo a passo. Depois, explore o **Guia de Uso Avançado** para dominar truques e boas práticas.
+Se você está iniciando no Windows, acesse o [Tutorial de Instalação no Windows](tutorial-instalacao-windows.md) para configurar o App Desktop e a chave OpenRouter do zero em poucos minutos.

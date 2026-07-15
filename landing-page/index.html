@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>opencro - Seu Assistente de IA no Terminal</title>
-    <meta name="description" content="Aprenda a usar o OpenCode, o agente de IA open source, com OpenRouter no Windows. Guia prático para empresários, freelancers, devs iniciantes e entusiastas de IA.">
+    <title>opencro - Seu Assistente e Agente de IA Particular para Windows</title>
+    <meta name="description" content="Aprenda a usar o OpenCode (App Visual e Terminal) com OpenRouter e Okam no Windows. A tríade open-source de IA ideal para iniciantes, empresários e devs.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,13 +31,13 @@
         <section class="hero">
             <div class="hero-bg-shapes"></div>
             <div class="hero-content">
-                <div class="hero-badge">OPEN-SOURCE</div>
+                <div class="hero-badge">TRÍADE IA OPEN-SOURCE</div>
                 <h1 class="hero-title">
-                    Seu agente de IA particular<br>
-                    direto no <span class="gradient-text">terminal do Windows</span>
+                    Seu assistente e agente de IA<br>
+                    particular no <span class="gradient-text">Windows</span>
                 </h1>
                 <p class="hero-description">
-                    <strong>100% open-source (MIT).</strong> O <strong>OpenCode</strong> é o agente de IA que está revolucionando a forma como devs e empresas programam. Com o <strong>OpenRouter</strong>, você usa os melhores modelos (Claude, GPT, Gemini) sem assinatura fixa — pagando só pelo que consumir. Este guia ensina <strong>tudo do zero</strong>: instalação, configuração e uso prático no Windows.
+                    O <strong>OpenCRO</strong> é o ecossistema definitivo que une <strong>C</strong>ode (OpenCode), <strong>R</strong>outer (OpenRouter) e <strong>O</strong>kam (governança). Baixe o **aplicativo visual do OpenCode** para configurar e usar os melhores modelos de IA do mundo (Claude, GPT, Gemini, DeepSeek) sem assinatura, de forma 100% noob-friendly e pagando apenas centavos pelo que consome.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
@@ -136,8 +136,8 @@
                     </div>
                     <div class="content-card">
                         <div class="content-number">02</div>
-                        <h3>Tutorial de Instalação no Windows</h3>
-                        <p>Passo a passo completo: WSL, npm, Chocolatey, configuração de API keys, OpenRouter e primeiros comandos.</p>
+                        <h3>Guia de Setup Simples</h3>
+                        <p>Instalação amigável do App Desktop e da chave OpenRouter, com rotas avançadas para terminal (WSL/npm) e governança.</p>
                         <span class="content-tag">Mão na Massa</span>
                     </div>
                     <div class="content-card">
@@ -172,7 +172,7 @@
                         </button>
                         <button class="tab-btn" data-tab="tab-instalacao">
                             <span class="tab-icon">⚡</span>
-                            <span class="tab-title">2. Instalação Windows</span>
+                            <span class="tab-title">2. Configuração & Setup</span>
                         </button>
                         <button class="tab-btn" data-tab="tab-avancado">
                             <span class="tab-icon">🛠️</span>
@@ -192,61 +192,70 @@
                     <div class="docs-content">
                         <!-- Aba 1: Introdução -->
                         <div id="tab-introducao" class="tab-panel active">
-                            <h3>1. Guia de Introdução: OpenCode + OpenRouter</h3>
-                            <p class="panel-lead">Seu primeiro passo para dominar agentes de IA no terminal do Windows.</p>
+                            <h3>1. Guia de Introdução: A Tríade OpenCRO</h3>
+                            <p class="panel-lead">Sua porta de entrada para o ecossistema profissional gratuito de IA para todos.</p>
                             <hr class="panel-divider">
                             
+                            <h4>O que é o ecossistema OpenCRO?</h4>
+                            <p>O <strong>OpenCRO</strong> não é uma ferramenta única, mas sim um ecossistema integrado que une três pilares essenciais de código aberto para criar o ambiente ideal de desenvolvimento assistido por IA no Windows:</p>
+                            <ul>
+                                <li><strong>C (Code - OpenCode)</strong>: O agente de IA local e o aplicativo visual amigável que interage com seu projeto, lê seus arquivos e executa tarefas automaticamente.</li>
+                                <li><strong>R (Router - OpenRouter)</strong>: O gateway unificado que conecta o OpenCode a dezenas de modelos mundiais (Claude, GPT, Gemini, DeepSeek) sob demanda, pagando apenas pelo que usar (centavos por milhão de tokens) ou usando opções 100% gratuitas.</li>
+                                <li><strong>O (Okam - Okam CLI)</strong>: O validador de governança e segurança local que impede vazamento de senhas/chaves API e executa ganchos automáticos (hooks) de revisão de código e skills.</li>
+                            </ul>
+
                             <h4>O que é OpenCode?</h4>
-                            <p><strong>OpenCode</strong> é um agente de IA open-source que opera diretamente no seu terminal (ou como app desktop/IDE). Ele entende seu projeto, acessa seus arquivos, roda comandos e escreve código — tudo orquestrado por modelos de linguagem (LLMs).</p>
-                            <p>Diferente de chatbots comuns como ChatGPT, o OpenCode tem <strong>contexto completo do seu projeto</strong>: ele lê a estrutura de diretórios, entende suas dependências, conhece suas convenções de código (via <code>AGENTS.md</code>) e executa ações reais no sistema, como instalar pacotes, criar arquivos e fazer commits.</p>
+                            <p><strong>OpenCode</strong> é o seu assistente de IA. Ele possui tanto uma <strong>interface gráfica visual (App Desktop)</strong> super amigável para iniciantes quanto uma interface de terminal (CLI/TUI) para desenvolvedores. Diferente dos chats comuns (como ChatGPT), o OpenCode lê o contexto de arquivos locais e ajuda você a programar de verdade, sem complicação.</p>
                             
                             <div class="alert-box alert-note">
                                 <span class="alert-icon">💡</span>
                                 <div class="alert-content">
-                                    <strong>Características principais:</strong> 100% open-source, multi-provedor (funciona com Claude, GPT, Gemini, Llama), multi-sessão (agentes em paralelo), LSP-aware (entende a estrutura do código) e expansível com Skills e MCP.
+                                    <strong>Noob-Friendly:</strong> Se você tem medo de terminal, não se preocupe! O App Desktop do OpenCode permite que você abra pastas do Windows e converse com a IA visualmente por meio de janelas comuns.
                                 </div>
                             </div>
 
-                            <h4>O que é OpenRouter?</h4>
-                            <p>O <strong>OpenRouter</strong> é um gateway unificado de APIs para modelos de IA. Em vez de criar contas e cadastrar cartões de crédito em múltiplos provedores (OpenAI, Anthropic, Google, Meta...), você utiliza <strong>uma única API key</strong> para acessar centenas de modelos pagando apenas pelo consumo real de tokens (ou usando modelos gratuitos).</p>
-                            
-                            <h4>Por que usar juntos?</h4>
-                            <p>O OpenCode precisa de modelos de IA para rodar. Ao conectá-lo ao OpenRouter, você ganha acesso a todo o catálogo mundial de IA com uma única chave e uma única conta. É a forma mais econômica e prática de rodar o seu assistente local.</p>
+                            <h4>Modelos de IA & Custos (Referência Julho/2026)</h4>
+                            <p>Ao usar o OpenRouter como seu provedor, você pode selecionar qual modelo deseja usar. A cobrança é feita por consumo real de tokens (palavras processadas), sem assinaturas mensais fixas exageradas:</p>
                             
                             <div class="table-responsive">
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>Modelo</th>
-                                            <th>Custo por 1M tokens (entrada/saída)</th>
+                                            <th>Modelo de IA</th>
+                                            <th>Custo aproximado por 1M tokens (entrada/saída)</th>
                                             <th>Indicação de Uso</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><strong>Claude Sonnet 4</strong></td>
+                                            <td><strong>Claude 3.5 Sonnet</strong></td>
                                             <td>~$3.00 / $15.00</td>
-                                            <td>Melhor inteligência de código e arquitetura</td>
+                                            <td>O melhor modelo do mundo para lógica complexa e código.</td>
                                         </tr>
                                         <tr>
                                             <td><strong>GPT-4o</strong></td>
                                             <td>~$2.50 / $10.00</td>
-                                            <td>Excelente para lógica e tarefas rápidas</td>
+                                            <td>Alta performance, ideal para automações gerais e rapidez.</td>
                                         </tr>
                                         <tr>
-                                            <td><strong>Gemini 2.5 Pro</strong></td>
+                                            <td><strong>Gemini 1.5 Pro</strong></td>
                                             <td>~$1.25 / $5.00</td>
-                                            <td>Grande volume de contexto e documentação</td>
+                                            <td>Leitura de gigantescos volumes de arquivos (até 2M tokens).</td>
                                         </tr>
                                         <tr>
                                             <td><strong>DeepSeek V3</strong></td>
-                                            <td>~$0.50 / $2.00</td>
-                                            <td>Máximo custo-benefício para rotinas diárias</td>
+                                            <td>~$0.14 / $0.28</td>
+                                            <td>Custo-benefício imbatível para o dia a dia e rotinas rápidas.</td>
                                         </tr>
                                         <tr>
-                                            <td><strong>Llama 3.1 70B</strong></td>
-                                            <td><strong>Gratuito (Free)</strong></td>
-                                            <td>Ideal para testes e aprendizado grátis</td>
+                                            <td><strong>DeepSeek R1</strong></td>
+                                            <td>~$0.55 / $2.19</td>
+                                            <td>Modelo de raciocínio profundo ideal para depurações difíceis.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Llama 3.3 70B</strong></td>
+                                            <td><strong>Gratuito / Centavos</strong></td>
+                                            <td>Ótimo para testes sem gastar nada de saldo.</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -255,125 +264,84 @@
                         
                         <!-- Aba 2: Instalação Windows -->
                         <div id="tab-instalacao" class="tab-panel">
-                            <h3>2. Instalação: OpenCode + OpenRouter no Windows</h3>
-                            <p class="panel-lead">Configure seu ambiente de desenvolvimento assistido por IA em 15 minutos.</p>
+                            <h3>2. Configuração & Setup no Windows</h3>
+                            <p class="panel-lead">Escolha o caminho ideal para você: a interface gráfica simples do App Desktop ou a velocidade do terminal.</p>
                             <hr class="panel-divider">
                             
-                            <div class="alert-box alert-tip">
-                                <span class="alert-icon">⭐</span>
-                                <div class="alert-content">
-                                    <strong>Duas opções de instalação:</strong> A Rota A (WSL - Windows Subsystem for Linux) é altamente recomendada devido ao desempenho superior de arquivos e compatibilidade total. A Rota B é nativa no Windows usando Node.js/npm.
-                                </div>
-                            </div>
-                            
                             <h4>Passo 1: Criar conta grátis no OpenRouter</h4>
-                            <p>Antes de instalar as ferramentas, você precisa da chave de API que conecta o agente aos modelos de linguagem:</p>
+                            <p>Antes de tudo, você precisa da chave de conexão que liga seu assistente aos modelos de linguagem:</p>
                             <ol class="step-list">
-                                <li>Acesse o site oficial do <a href="https://openrouter.ai" target="_blank" rel="noopener noreferrer" class="link-external">OpenRouter.ai ↗</a> e crie uma conta gratuita (pode usar login direto com Google ou GitHub).</li>
-                                <li>Vá para a seção de chaves em <a href="https://openrouter.ai/keys" target="_blank" rel="noopener noreferrer" class="link-external">openrouter.ai/keys ↗</a>.</li>
-                                <li>Clique em <strong>Create Key</strong>, dê um nome para ela (exemplo: "opencode-local") e salve.</li>
-                                <li><strong>Importante:</strong> Copie e guarde a chave gerada (ela começa com <code>sk-or-...</code>). Ela é exibida apenas uma vez.</li>
+                                <li>Acesse o site oficial do <a href="https://openrouter.ai" target="_blank" rel="noopener noreferrer" class="link-external">OpenRouter.ai ↗</a> e cadastre-se gratuitamente (via Google ou GitHub).</li>
+                                <li>Vá para <a href="https://openrouter.ai/keys" target="_blank" rel="noopener noreferrer" class="link-external">openrouter.ai/keys ↗</a> e clique em <strong>Create Key</strong>.</li>
+                                <li>Dê um nome para sua chave (ex: "OpenCode App") e clique em criar.</li>
+                                <li><strong>Copie a chave gerada imediatamente</strong> (ela começa com <code>sk-or-...</code>) e guarde em local seguro. Ela só é exibida uma única vez.</li>
                             </ol>
                             
                             <div class="accordion-subtabs">
                                 <div class="subtab-header">
-                                    <button class="subtab-btn active" data-subtab="sub-wsl">Rota A: WSL (Recomendada)</button>
-                                    <button class="subtab-btn" data-subtab="sub-native">Rota B: Instalação Nativa (npm)</button>
+                                    <button class="subtab-btn active" data-subtab="sub-app">Rota A: App Desktop (Recomendada e Sem Terminal!)</button>
+                                    <button class="subtab-btn" data-subtab="sub-terminal">Rota B: Terminal / WSL (Desenvolvedores)</button>
                                 </div>
                                 
                                 <div class="subtab-content">
-                                    <!-- Rota A: WSL -->
-                                    <div id="sub-wsl" class="sub-panel active">
-                                        <h5>1. Instalar WSL (Ubuntu)</h5>
-                                        <p>Abra o <strong>PowerShell como Administrador</strong> e execute o comando abaixo para ativar o Linux integrado ao Windows:</p>
+                                    <!-- Rota A: App Desktop -->
+                                    <div id="sub-app" class="sub-panel active">
+                                        <h5>1. Baixar o OpenCode App</h5>
+                                        <p>O OpenCode possui um aplicativo completo para Windows com janelas e interface amigável:</p>
+                                        <ol class="step-list">
+                                            <li>Acesse o site oficial <a href="https://opencode.ai" target="_blank" rel="noopener noreferrer" class="link-external">opencode.ai ↗</a>.</li>
+                                            <li>Clique no botão para baixar o instalador de Windows (arquivo <code>.exe</code>).</li>
+                                            <li>Execute o instalador baixado e siga as instruções na tela.</li>
+                                        </ol>
+                                        
+                                        <h5>2. Configurar Chave de API no App</h5>
+                                        <p>Ao abrir o aplicativo pela primeira vez:</p>
+                                        <ol class="step-list">
+                                            <li>Clique no ícone de <strong>Engrenagem (Configurações)</strong> no canto inferior esquerdo.</li>
+                                            <li>Selecione <strong>OpenRouter</strong> como o provedor de IA.</li>
+                                            <li>Cole a sua chave de API (<code>sk-or-...</code>) no campo correspondente e salve.</li>
+                                            <li>No menu suspenso de modelos, selecione seu modelo inicial. Recomendamos o <code>deepseek/deepseek-chat</code> (super barato) ou <code>meta-llama/llama-3.3-70b-instruct</code> (gratuito).</li>
+                                        </ol>
+                                        
+                                        <h5>3. Abrir seu Projeto</h5>
+                                        <p>Para interagir com seus arquivos: clique em <strong>Open Folder (Abrir Pasta)</strong> e selecione o diretório dos seus arquivos no Windows. O OpenCode carregará todo o contexto visualmente e você poderá começar a solicitar alterações escrevendo na caixa de bate-papo.</p>
+                                    </div>
+                                    
+                                    <!-- Rota B: Terminal/WSL -->
+                                    <div id="sub-terminal" class="sub-panel">
+                                        <h5>1. Instalação via WSL (Linux recomendado no Windows)</h5>
+                                        <p>Se você prefere a linha de comando e TUI no terminal, execute no PowerShell como Administrador:</p>
                                         <div class="code-wrapper">
                                             <pre><code class="language-powershell">wsl --install</code></pre>
                                             <button class="copy-btn">Copiar</button>
                                         </div>
-                                        <p>Reinicie o computador quando solicitado. Ao reiniciar, o terminal do Ubuntu abrirá automaticamente para você definir seu usuário e senha do Linux.</p>
-                                        
-                                        <h5>2. Instalar OpenCode no Ubuntu</h5>
-                                        <p>No terminal do Ubuntu (WSL), execute o instalador oficial:</p>
+                                        <p>Após reiniciar e configurar o Ubuntu, instale o OpenCode dentro dele:</p>
                                         <div class="code-wrapper">
-                                            <pre><code class="language-bash">curl -fsSL https://opencode.ai/install | bash</code></pre>
-                                            <button class="copy-btn">Copiar</button>
-                                        </div>
-                                        <p>Recarregue as configurações de terminal:</p>
-                                        <div class="code-wrapper">
-                                            <pre><code class="language-bash">source ~/.bashrc</code></pre>
+                                            <pre><code class="language-bash">curl -fsSL https://opencode.ai/install | bash
+source ~/.bashrc</code></pre>
                                             <button class="copy-btn">Copiar</button>
                                         </div>
                                         
-                                        <h5>3. Configurar a Chave do OpenRouter no WSL</h5>
-                                        <p>Crie o diretório de configurações do OpenCode:</p>
-                                        <div class="code-wrapper">
-                                            <pre><code class="language-bash">mkdir -p ~/.config/opencode</code></pre>
-                                            <button class="copy-btn">Copiar</button>
-                                        </div>
-                                        <p>Agora crie o arquivo <code>config.json</code> para salvar sua chave. Você pode colar a estrutura JSON abaixo substituindo <code>sua-chave-aqui</code>:</p>
-                                        <div class="code-wrapper">
-                                            <pre><code class="language-json">{
-  "provider": "openrouter",
-  "openRouterApiKey": "sk-or-v1-sua-chave-aqui",
-  "model": "meta-llama/llama-3.1-70b"
-}</code></pre>
-                                            <button class="copy-btn">Copiar</button>
-                                        </div>
-                                        
-                                        <div class="alert-box alert-note">
-                                            <span class="alert-icon">💡</span>
-                                            <div class="alert-content">
-                                                <strong>Modelo Gratuito:</strong> Por padrão, definimos o <code>meta-llama/llama-3.1-70b</code> que é 100% gratuito no OpenRouter. Você pode rodar à vontade sem adicionar saldo!
-                                            </div>
-                                        </div>
-                                        
-                                        <h5>4. Acessando seus projetos do Windows no WSL</h5>
-                                        <p>Seus arquivos do Windows (C:, D:, etc.) ficam mapeados dentro do WSL na pasta <code>/mnt/</code>. Navegue até seu projeto:</p>
-                                        <div class="code-wrapper">
-                                            <pre><code class="language-bash">cd /mnt/c/Users/SeuNome/Documents/meu-projeto
-opencode</code></pre>
-                                            <button class="copy-btn">Copiar</button>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Rota B: Nativa -->
-                                    <div id="sub-native" class="sub-panel">
-                                        <h5>1. Instalar Node.js</h5>
-                                        <p>Baixe e instale a versão LTS recomendada do <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer" class="link-external">Node.js ↗</a>. Certifique-se de marcar a opção para adicionar ao PATH do sistema durante a instalação.</p>
-                                        
-                                        <h5>2. Instalar OpenCode via npm</h5>
-                                        <p>Abra o <strong>PowerShell</strong> e rode o instalador global:</p>
+                                        <h5>2. Instalação Nativa via npm (Node.js)</h5>
+                                        <p>Se não quiser WSL, instale no Windows pelo Node.js:</p>
                                         <div class="code-wrapper">
                                             <pre><code class="language-powershell">npm install -g opencode-ai</code></pre>
                                             <button class="copy-btn">Copiar</button>
                                         </div>
                                         
-                                        <h5>3. Salvar Variável de Ambiente no Windows</h5>
-                                        <p>Execute no PowerShell para definir permanentemente sua chave do OpenRouter:</p>
+                                        <h5>3. Configurar Chave no Terminal</h5>
+                                        <p>Configure a variável no seu terminal para conectar ao OpenRouter:</p>
                                         <div class="code-wrapper">
                                             <pre><code class="language-powershell">[System.Environment]::SetEnvironmentVariable('OPENROUTER_API_KEY', 'sk-or-v1-sua-chave-aqui', 'User')</code></pre>
-                                            <button class="copy-btn">Copiar</button>
-                                        </div>
-                                        <p><em>Reinicie o terminal do PowerShell após este comando para que a chave seja carregada.</em></p>
-                                        
-                                        <h5>4. Inicializar o OpenCode</h5>
-                                        <p>Navegue até a pasta do seu projeto e chame o assistente:</p>
-                                        <div class="code-wrapper">
-                                            <pre><code class="language-powershell">cd C:\projetos\meu-projeto
-opencode</code></pre>
                                             <button class="copy-btn">Copiar</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <h4>Passo 2: Configurando seu Projeto (/init)</h4>
-                            <p>Na primeira vez que rodar o OpenCode dentro de uma pasta de projeto, envie o comando especial:</p>
-                            <div class="code-wrapper">
-                                <pre><code class="language-plaintext">/init</code></pre>
-                                <button class="copy-btn">Copiar</button>
-                            </div>
-                            <p>Este comando criará o arquivo <code>AGENTS.md</code> na raiz do projeto. Ele funciona como a governança do seu agente, permitindo ditar regras personalizadas de desenvolvimento (exemplo: padrão de código, banco de dados preferido, pastas a evitar).</p>
+                            <h4>Passo 2: Governança do Projeto (AGENTS.md)</h4>
+                            <p>No App Desktop ou no terminal, ao abrir um projeto novo pela primeira vez, o assistente perguntará se deseja inicializar as regras de governança. Alternativamente, você pode rodar o comando <code>/init</code>.</p>
+                            <p>Isso criará o arquivo <code>AGENTS.md</code> na raiz da sua pasta. Nele, você pode escrever regras simples em português (ex: "Não use banco de dados MySQL, prefira SQLite", "mantenha os arquivos pequenos e explicados"). A IA lerá essas instruções antes de qualquer alteração, garantindo total controle.</p>
                         </div>
                         
                         <!-- Aba 3: Uso Avançado -->
@@ -579,27 +547,6 @@ okam skill list</code></pre>
             </div>
         </section>
 
-        <!-- Por que OpenRouter Section -->
-        <section class="why-section">
-            <div class="section-container">
-                <h2 class="section-title">Por que <span class="gradient-text">OpenRouter</span></h2>
-                <div class="why-grid">
-                    <div class="why-card">
-                        <h3>Um acesso, todos os modelos</h3>
-                        <p>Conecte-se a Claude, GPT, Gemini, Llama e centenas de outros modelos através de <strong>uma única API</strong>. Sem assinatura de cada serviço separadamente.</p>
-                    </div>
-                    <div class="why-card">
-                        <h3>Pagamento por uso</h3>
-                        <p>Nada de assinatura fixa. Você <strong>paga só pelo que usar</strong>, por token. Ideal para testes, projetos pessoais e uso profissional moderado.</p>
-                    </div>
-                    <div class="why-card">
-                        <h3>Modelos gratuitos disponíveis</h3>
-                        <p>OpenRouter oferece modelos gratuitos com limites generosos. Você pode começar a usar o OpenCode <strong>sem gastar nada</strong>.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <footer class="footer">
@@ -609,9 +556,21 @@ okam skill list</code></pre>
                 <p>Seu atalho para dominar agentes de IA no Windows.</p>
             </div>
             <div class="footer-links">
-                <a href="https://opencode.ai">OpenCode Oficial</a>
-                <a href="https://openrouter.ai">OpenRouter</a>
-                <a href="https://github.com/anomalyco/opencode">GitHub</a>
+                <div class="footer-link-group">
+                    <strong>Code (OpenCode)</strong>
+                    <a href="https://opencode.ai" target="_blank" rel="noopener noreferrer">Site Oficial</a>
+                    <a href="https://github.com/anomalyco/opencode" target="_blank" rel="noopener noreferrer">Repositório GitHub</a>
+                </div>
+                <div class="footer-link-group">
+                    <strong>Router (OpenRouter)</strong>
+                    <a href="https://openrouter.ai" target="_blank" rel="noopener noreferrer">Site Oficial</a>
+                    <a href="https://openrouter.ai/docs" target="_blank" rel="noopener noreferrer">Documentação API</a>
+                </div>
+                <div class="footer-link-group">
+                    <strong>Okam (Governança)</strong>
+                    <a href="https://okam-os.vercel.app/" target="_blank" rel="noopener noreferrer">Site Oficial</a>
+                    <a href="https://github.com/juliano-ceconi/okam" target="_blank" rel="noopener noreferrer">Repositório GitHub</a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
