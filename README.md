@@ -25,6 +25,10 @@ Este repositório contém material gratuito — licenciado sob MIT — para apre
 | `style.css` | Design system completo com variáveis CSS, responsivo e animações |
 | `script.js` | FAQ accordion, simulação de terminal e navegação suave |
 
+## Bônus de Governança: Okam CLI 🧠
+
+Aprenda a configurar e usar o **Okam CLI** para gerenciar sessões de IA locais, garantir governança do projeto através de ganchos (hooks) automatizados de pré e pós-comando, e expandir a inteligência do agente com skills reutilizáveis. As instruções de instalação e uso avançado estão descritas no `conteudo/tutorial-instalacao-windows.md`, no `conteudo/guia-uso-avancado.md` e na landing page oficial.
+
 ## Licença
 
 MIT © Juliano Ceconi

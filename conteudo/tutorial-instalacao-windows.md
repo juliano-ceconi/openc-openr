@@ -194,7 +194,27 @@ Se o OpenCode responder listando e analisando seus arquivos, **a instalação es
 
 ---
 
+## Bônus: Instalando Okam CLI para Governança
+
+O **Okam** é uma ferramenta complementar de governança de IA local que gerencia suas sessões, gerencia skills (pacotes de instruções e regras) e executa ganchos (hooks) de validação de estado antes e depois de cada comando.
+
+### Instalação rápida:
+No terminal do Windows (PowerShell) ou Linux/WSL (requer Node.js >= 18):
+
+```bash
+npm install -g okam-cli
+```
+
+Verifique se a instalação foi bem-sucedida:
+
+```bash
+okam --version
+```
+
+---
+
 ## Troubleshooting rápido
+
 
 | Problema | Solução |
 |---|---|
